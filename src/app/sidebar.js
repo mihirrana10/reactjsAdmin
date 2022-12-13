@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Sidebar() {
     return(
             <>
@@ -22,10 +24,10 @@ function Sidebar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="index.html">
+            <Link className="nav-link" to="/">
               <i className="mdi mdi-home menu-icon"></i>
               <span className="menu-title">Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -36,40 +38,48 @@ function Sidebar() {
             <div className="collapse" id="ui-basic">
               <ul className="nav flex-column sub-menu">
                 <li className="nav-item">
-                  <a className="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
+               
+                  <Link className="nav-link" to='/buttons'> 
+                  Buttons</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>
+                  
+                  <Link className="nav-link" to='/dropdown'>Dropdowns</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="pages/ui-features/typography.html">Typography</a>
+                  
+                  <Link className="nav-link" to="/typography">Typography</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="pages/icons/mdi.html">
+          <Link className="nav-link" to='/icons'>
+           
               <i className="mdi mdi-contacts menu-icon"></i>
               <span className="menu-title">Icons</span>
-            </a>
+            
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="pages/forms/basic_elements.html">
+            
+            <Link className="nav-link" to="/forms">
               <i className="mdi mdi-format-list-bulleted menu-icon"></i>
               <span className="menu-title">Forms</span>
-            </a>
+              </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="pages/charts/chartjs.html">
+         
+            <Link className="nav-link" to="/charts">
               <i className="mdi mdi-chart-bar menu-icon"></i>
               <span className="menu-title">Charts</span>
-            </a>
-          </li>
+              </Link>
+                   </li>
           <li className="nav-item">
-            <a className="nav-link" href="pages/tables/basic-table.html">
+             <Link className="nav-link" to="/tables">
               <i className="mdi mdi-table-large menu-icon"></i>
               <span className="menu-title">Tables</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <span className="nav-link" href="#">
