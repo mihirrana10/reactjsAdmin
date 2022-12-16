@@ -1,20 +1,26 @@
+import React ,{useState}from "react";
 import { Link } from "react-router-dom";
 
-function Sidebar() {
-    return(
-            <>
-                <nav className="sidebar sidebar-offcanvas" id="sidebar">
+  function Sidebar() {
+ 
+
+  return (
+    <>
+
+      <nav className="sidebar sidebar-offcanvas" id="sidebar">
+      
         <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
           <a className="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
           <a className="sidebar-brand brand-logo-mini pl-4 pt-3" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
         </div>
         <ul className="nav">
+
           <li className="nav-item nav-profile">
             <a href="#" className="nav-link">
               <div className="nav-profile-image">
                 <img src="assets/images/faces/face1.jpg" alt="profile" />
                 <span className="login-status online"></span>
-               
+
               </div>
               <div className="nav-profile-text d-flex flex-column pr-3">
                 <span className="font-weight-medium mb-2">Henry Klein</span>
@@ -38,47 +44,54 @@ function Sidebar() {
             <div className="collapse" id="ui-basic">
               <ul className="nav flex-column sub-menu">
                 <li className="nav-item">
-               
-                  <Link className="nav-link" to='/buttons'> 
-                  Buttons</Link>
+
+                  <Link className="nav-link" to='/buttons'>
+                    Buttons</Link>
                 </li>
                 <li className="nav-item">
-                  
+
                   <Link className="nav-link" to='/dropdown'>Dropdowns</Link>
                 </li>
                 <li className="nav-item">
-                  
+
                   <Link className="nav-link" to="/typography">Typography</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li className="nav-item">
-          <Link className="nav-link" to='/icons'>
-           
+            <Link className="nav-link" to='/icons'>
+
               <i className="mdi mdi-contacts menu-icon"></i>
               <span className="menu-title">Icons</span>
-            
+
             </Link>
           </li>
           <li className="nav-item">
-            
+
             <Link className="nav-link" to="/forms">
               <i className="mdi mdi-format-list-bulleted menu-icon"></i>
               <span className="menu-title">Forms</span>
-              </Link>
+            </Link>
           </li>
           <li className="nav-item">
-         
+
             <Link className="nav-link" to="/charts">
               <i className="mdi mdi-chart-bar menu-icon"></i>
               <span className="menu-title">Charts</span>
-              </Link>
-                   </li>
+            </Link>
+          </li>
           <li className="nav-item">
-             <Link className="nav-link" to="/tables">
+            <Link className="nav-link" to="/tables">
               <i className="mdi mdi-table-large menu-icon"></i>
               <span className="menu-title">Tables</span>
+            </Link>
+          </li>
+          <li className="nav-item">
+
+            <Link className="nav-link" to="/props">
+              <i className="mdi mdi-chart-bar menu-icon"></i>
+              <span className="menu-title">Props Test</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -106,9 +119,13 @@ function Sidebar() {
           </li>
         </ul>
       </nav>
-            </>
-    )
-    
+      
+     
+
+
+    </>
+  );
+
 }
 
 export default Sidebar;

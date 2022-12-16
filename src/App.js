@@ -12,6 +12,7 @@ import Icon from './app/icons/icons';
 import Forms from './app/Forms/forms';
 import Charts from './app/charts/charts';
 import Tables from './app/tables/tables';
+import Props from './app/props';
 
 
 
@@ -27,10 +28,11 @@ function App() {
          <Route path="buttons" element={<Buttons />} />
          <Route path="dropdown" element={<Dropdown />} />
          <Route path="typography" element={<Typography/>} />
-         <Route path="icons" element={<Icon/>}/>
+         <Route path="icons" element={<Icon />}/>
          <Route path="forms" element={<Forms/>}/>
          <Route path="charts" element={<Charts/>}/>
          <Route path="tables" element={<Tables/>}/>
+         <Route path="props" element={<Props name="Mihir" tool="React Js"/>} />
 
 
 

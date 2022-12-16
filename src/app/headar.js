@@ -1,11 +1,16 @@
+import React ,{useState}from "react";
+import { Link } from "react-router-dom";
+
 function Headar() {
+  
     
     return (
    <>
+   
      <nav className="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
           <div className="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
             <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
-            <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+            <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button" >
               <i className="mdi mdi-menu"></i>
             </button>
             <ul className="navbar-nav">
